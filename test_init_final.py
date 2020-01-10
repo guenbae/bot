@@ -539,7 +539,7 @@ async def task():
 								bossMungFlag[i] = False
 								bossMungCnt[i] = bossMungCnt[i] + 1
 								tmp_bossTime[i] = bossTime[i] = nextTime = tmp_bossTime[i]+datetime.timedelta(hours=int(bossData[i][1]), minutes=int(bossData[i][5]))
-								tmp_bossTimeString[i] = bossTimeString[i] = nextTime.strftime('%H:%M') 200110 Rachel 초 삭제 
+								tmp_bossTimeString[i] = bossTimeString[i] = nextTime.strftime('%H:%M') # 200110 Rachel 초 삭제 
 								tmp_bossDateString[i] = bossDateString[i] = nextTime.strftime('%Y-%m-%d')
 								await client.get_channel(channel).send("```" +  bossData[i][0] + ' 미입력 됐습니다.```', tts=False)
 								embed = discord.Embed(
